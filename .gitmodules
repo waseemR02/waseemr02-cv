@@ -1,3 +1,3 @@
-[submodule "cv.typ"]
-	path = cv.typ
+[submodule "template"]
+	path = template
 	url = git@github.com:jskherman/cv.typ.git
