@@ -1,0 +1,244 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/jskherman/cv.typ/main/cv.typ.schema.json
+
+personal:
+  name: Waseem Riaz
+  email: waseem.riaz.9999@gmail.com
+  phone: (+91) 86965 03303
+  url: 
+  location:
+    city: Chennai
+    region: Tamil Nadu
+    postalCode: 603203
+    country: India
+  profiles:
+    - network: LinkedIn
+      username: Waseem Riaz
+      url: https://linkedin.com/in/waseem-riaz
+    - network: GitHub
+      username: waseemR02
+      url: https://github.com/waseemR02
+
+work:
+  - organization: Siemens Technology and Services Pvt. Ltd.
+    url: https://www.siemens.com/in/en.html
+    location: Bangalore, India
+    positions:
+      - position: Intern at PAMC
+        startDate: 2024-01-08
+        endDate: "present"
+        highlights:
+          # Creating seiri: an automation tool which is a cross-platfrom automation tool for handling csv <-> xlsx conversions and validating them
+          - Working on developing a cross-platform automation tool for handling csv$arrow.l.r.double$xlsx conversions and validating them
+education:
+  - institution: SRM Institute of Science and Technology
+    url: https://www.srmist.edu.in/
+    area: Computer Science and Engineering
+    studyType: B.Tech
+    startDate: 2021-09-01
+    endDate: 2025-06-30
+    location: Kattankulathur, Tamil Nadu, India 
+    honors:
+      - 9.91 CGPA
+    courses:
+    highlights:
+      - "*Electives*: Embedded Systems Design, Quantum Computation, Offensive Security, GPU Programming, PCB Designing"
+      - "*Project*: Under the mentorship of Dr.K.Meenakshi, working on _Animal Detection and Alert System_, focused in 
+      optimizing deeplearning models like yolov5 and mobilenet-SSD, and writing paper on tuning hyperparameters with algorithms like `IWO` and `PSO`"
+
+affiliations:
+  - organization: Team Rudra
+    position: Developer
+    location: SRM IST, Kattankulathur, Tamil Nadu, India
+    url: https://www.srmrudra.com/
+    startDate: 2022-04-30
+    endDate: "present"
+    highlights:
+      - Team focuses on developing rovers for University Rover Challenge and International Rover Challenge
+      - Primarily worked on developing embedded systems for rover and writing ROS2 stack for rover control and autonomous navigation
+      - Won 3rd place in International Rover Challenge 2024 and 5th place in International Rover Design Challenge 2023
+
+awards:
+  - title: Global Rank 3rd in International Rover Challenge
+    date: 2024-01-29
+    issuer: Space Robotics Society
+    url: https://drive.google.com/file/d/1_ebH2MqSpNfWNbZqpe0Ak5FTrL2B_8mr/view?usp=sharing
+    location: Coimbatore, Tamil Nadu, India
+    highlights:
+  - title: Global Rank 5th in International Rover Design Challenge
+    date: 2023-10-20
+    issuer: Space Robotics Society
+    url: https://drive.google.com/file/d/12R4VZzB9ERelN0WwLCmrgPU3LodgBRYN/view?usp=sharing
+    location: Chennai, Tamil Nadu, India
+    highlights:
+  - title: Global Rank 7th in International Rover Challenge
+    date: 2023-01-30
+    issuer: Space Robotics Society
+    url: 
+    location: Bangalore, India
+    highlights:
+  - title: Global Rank 8th in International Rover Design Challenge
+    date: 2022-10-29
+    issuer: Space Robotics Society
+    url: https://drive.google.com/file/d/1eOwaZb4CX9R_Low_-fd748czsYjzDUtT/view?usp=sharing
+    location: Chennai, Tamil Nadu, India
+    highlights:
+
+certificates:
+  - name: "Embedded Systems Programming"
+    date: 2023-11-01
+    issuer: Microchip
+    url: https://drive.google.com/drive/folders/11TNocqWHwe8Vzv4GgQVUBax4pRYtd6Y7?usp=sharing
+  - name: "Introduction to Cybersecurity and Fundamentals of Network and Cloud Security"
+    date: 2023-07-01
+    issuer: Palo Alto
+    url: https://drive.google.com/drive/folders/1f6fjV3zFfvQFF_Xvy-OlCmUJoY9FugGG?usp=sharing
+  - name: "Matlab Optimization onRamp"
+    date: 2023-10-27
+    issuer: MathWorks
+    url: https://drive.google.com/drive/folders/1YYgTaczPAYAP2t4Me5Af5KaJXQONdPty?usp=sharing
+
+publications:
+  # - name: A convolutional neural network for predicting Greenland glacier melt and glacial water flow
+  #   publisher: Theoretical and Computational Fluid Dynamics
+  #   releaseDate: 2020-09-30
+  #   url: https://example.com
+
+projects:
+  - name: Mars Rover Project
+    url: https://www.srmrudra.com
+    affiliation: Team Rudra
+    startDate: 2022-04-01
+    endDate: "present"
+    highlights:
+      - Used ROS2 middleware framework for ease of use fast deployment and autonomous navigation
+      - Used CNN like `MobileNet-SSD` and `YOLOv5` for autonomous navigation of the rover
+      - Implemented `Kyvernitis` for `CAN` interface and modular control of the rover's sub systems
+  - name: Kyvernitis
+    url: https://github.com/waseemR02/kyvernitis
+    affiliation: Team Rudra
+    startDate: 2023-08-01
+    endDate: 2024-01-15
+    highlights:
+      - Enhanced the functionality of a rover by programming Blackpill microcontrollers to act as daughter boards, effectively managing subsystems like arm, bio-arm, astronaut’s box, etc to reduce overall system failure.
+      - Implemented `CAN` interface communication with pixhawk and later directly through 433 MHz
+      - Embraced the board‑agnostic approach inherent to Zephyr, allowing for easy customization through device tree configuration. This approach ensures that code compiles effortlessly for any Zephyr‑supported hardware board, aligning with the Linux philosophy of portability and adaptability.
+  - name: Seiri 
+    url: https://github.com/waseemR02/seiri
+    affiliation: Siemens Technology and Services Pvt. Ltd.
+    startDate: 2024-01-08
+    endDate: present
+    highlights:
+      - Working on developing a cross-platform GUI tool with `KIVY`
+      - Handles `csv`$arrow.l.r.double$`xlsx` conversions
+      - Validates files against a set of rules and constraints
+  - name: Animal Detection and Alert System
+    url: 
+    affiliation: SRM Institute of Science and Technology
+    startDate: 2023-04-01
+    endDate: "present"
+    highlights:
+      - Implemented different models for edge hardware ‑ `MobileNet‑SSD`, `YOLOv5` to be benchmarked for paperwork
+      - Optimizing deeplearning models like `YOLOv5` and `MobileNet-SSD`
+      - Writing paper on tuning hyperparameters with meta-heuristic algorithms like `GA`, `IWO` and `PSO`
+  - name: Alchemy
+    url: https://github.com/waseemR02/alchemy
+    affiliation: Team Rudra
+    startDate: 2023-11-01
+    endDate: 2023-12-31
+    highlights:
+      - Serial communication with Atmega 328p to extract data from sensors
+      - ROS2 framework with Foxglove for Visualization of data from the sensors
+  - name: Unconfined
+    url: https://github.com/waseemR02/unconfined
+    affiliation: Team Rudra
+    startDate: 2023-12-01
+    endDate: 2023-12-31
+    highlights:
+      - ROS2 package using ZMQ for seamless and realtime camera stream.
+      - Multithreaded to enable collection and stitching of photos while streaming
+  - name: CombinedSys
+    url: https://github.com/SHAY2407/combinedsys
+    affiliation: Team Rudra
+    startDate: 2022-04-01
+    endDate: 2022-04-30
+    highlights:
+      - Implemented a GUI Based Control for the Rover
+      - Motor Control, Sensor Data Visualization, Camera Stream integrated
+
+skills:
+  - category: Soft Skills
+    skills:
+      - Communication
+      - Critical Thinking
+      - Problem Solving
+      - Time Management
+      - Technical Writing
+  - category: Programming
+    skills:
+      - Python
+      - MATLAB
+      - Nodejs
+      - Typst
+      - LaTeX
+      - C
+      - Rust
+      - C++
+      - HTML
+      - CSS
+  - category: Miscellaneous
+    skills:
+      - Git
+      - Docker
+      - Linux
+      - Shell (bash/zsh)
+      - vim
+  - category: Libraries
+    skills:
+      - Pytorch
+      - TensorFlow
+      - Scikit-learn
+      - OpenCV
+      - Pandas
+      - Numpy
+      - Matplotlib
+      - Zeromq
+  - category: Technologies
+    skills:
+      - Zephyr RTOS
+      - Embedded Systems
+      - ROS2
+      - Deeplearning
+      - Computer Vision
+  - category: Embedded Systems and Hardware
+    skills:
+      - STM blackpill
+      - Raspberry Pico
+      - ESP32
+      - Arduino
+      - Pixhawk
+      - CAN
+      - UART
+      - I2C
+      - SPI
+
+languages:
+  - language: English
+    fluency: Professional proficiency
+  - language: Hindi
+    fluency: Native Speaker
+  - language: French
+    fluency: Basic proficiency
+
+interests:
+  - Video Games
+  - Anime
+  - Reading Fictional and Fantasy novels
+  - Linux
+
+references:
+  # You can comment out the entries below if you don't have any references
+  # The same goes for the publications
+
+  # - name: Dr. Jane Austin
+  #   reference: John was a great student. He was always eager to learn new things and was very passionate about his studies. As his mentor, I am proud to say that he was also a great leader and was able to lead his team to victory in the 2020 SCG Bangkok Business Challenge Global Competition.
+  #   url: https://janeaustin.com
