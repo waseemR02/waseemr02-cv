@@ -32,3 +32,41 @@ jobs:
           name: resume
           path: docs/resume.pdf
           if-no-files-found: error
+  
+  download and deploy:
+    needs: build
+    runs-on: ubuntu-latest
+
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout this repository
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+      
+      - name: Download Artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: resume
+          path: docs
+
+      - name: Install pdf2svg
+        run: sudo apt install pdf2svg
+
+      - name: Convert PDF to SVG
+        run: pdf2svg docs/resume.pdf docs/resume%d.svg all
+
+      - name: Setup Pages
+        if: github.ref == 'refs/heads/main'
+        uses: actions/configure-pages@v4
+
+      - name: Deploy Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
