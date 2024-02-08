@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Resume</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        body {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+            overflow-y: scroll; /* Added to make the page scrollable */
+        }
+        #resume {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            width: 100%; /* Added to make the SVG responsive */
+            height: 100%; /* Added to make the SVG height adjust automatically */
+            align-items: center;
+            /*max-height: 100%; /* Added to limit the maximum height of the SVG */
+            object-fit: cover;
+        }
+        #download {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            border-radius: 5px;
+            position: fixed; /* Added to fix the download option at the bottom */
+            bottom: 20px; /* Added to position the download option at the bottom */
+            left: 50%; /* Added to center the download option horizontally */
+            transform: translateX(-50%); /* Added to center the download option horizontally */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img id="resume" src="resume1.svg" alt="My Resume">  <!-- replace 'path/to/resume1.svg' with the path to your first resume SVG -->
+        <img id="resume" src="resume2.svg" alt="My Resume">  <!-- replace 'path/to/resume2.svg' with the path to your second resume SVG -->
+    </div>
+    <a id="download" href="resume.pdf" download>Download PDF</a>  <!-- replace 'path/to/resume.pdf' with the path to your resume PDF -->
+</body>
+</html>
