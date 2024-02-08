@@ -1,0 +1,34 @@
+name: Compile and Upload Typst CVs
+on: [workflow_dispatch]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout this repository
+        uses: actions/checkout@v4
+      - name: Checkout cv.typ template repository
+        uses: actions/checkout@v4
+        with:
+          repository: jskherman/cv.typ
+          path: template
+      - name: Compile Typst files
+        uses: jskherman/typst-action@main
+        with:
+          source_file: |
+            resume.typ
+          options: |
+            --font-path
+            ./fonts
+            --root
+            .
+            
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: resume
+          path: docs/resume.pdf
+          if-no-files-found: error
