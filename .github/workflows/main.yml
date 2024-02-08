@@ -34,11 +34,15 @@ jobs:
 
       - name: Convert PDF to SVG
         run: pdf2svg gh-pages/resume.pdf gh-pages/resume%d.svg all
+        
+      - name: Setup Pages
+        if: github.ref == 'refs/heads/typst'
+        uses: actions/configure-pages@v4
 
       - name: Upload Page Artifacts
         uses: actions/upload-pages-artifact@v3
         with:
-          path: gh-pages
+          path: ./gh-pages
   
   deploy:
     needs: build
