@@ -33,7 +33,7 @@ jobs:
           path: docs/resume.pdf
           if-no-files-found: error
   
-  download and deploy:
+  download_and_deploy:
     needs: build
     runs-on: ubuntu-latest
 
