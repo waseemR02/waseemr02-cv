@@ -25,7 +25,9 @@ jobs:
             ./fonts
             --root
             .
-            gh-pages/resume.pdf
+
+      - name: Move resume to gh-pages
+        run: mv docs/resume.pdf gh-pages/
 
       - name: Install pdf2svg
         run: sudo apt install pdf2svg
