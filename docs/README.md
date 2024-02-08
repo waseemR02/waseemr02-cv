@@ -25,8 +25,4 @@ That's it! You now have a resume generated from the template using just the YAML
 
 If you want to customize the resume template or make any modifications to the generation process, you can explore the [Typst](https://github.com/typst/typst) repository for more information. The template provided by [jskherman](https://github.com/jskherman/cv.typ) can also be customized to suit your needs.
 
-Feel free to experiment and make this resume generator your own!
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
+Feel free to experiment!!
