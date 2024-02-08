@@ -25,11 +25,18 @@ jobs:
             ./fonts
             --root
             .
-            
-      - name: Upload Artifacts
+            gh-pages/resume.pdf
+
+      - name: Install pdf2svg
+        run: sudo apt install pdf2svg
+
+      - name: Convert PDF to SVG
+        run: pdf2svg gh-pages/resume.pdf gh-pages/resume%d.svg all
+
+      - name: Upload Page Artifacts
         uses: actions/upload-pages-artifact@v3
         with:
-          path: docs/resume.pdf
+          path: gh-pages
   
   download_and_deploy:
     needs: build
@@ -46,20 +53,6 @@ jobs:
     steps:
       - name: Checkout this repository
         uses: actions/checkout@v4
-        with:
-          ref: deploy-resume
-      
-      - name: Download Artifacts
-        uses: actions/download-artifact@v3
-        with:
-          name: resume
-          path: docs
-
-      - name: Install pdf2svg
-        run: sudo apt install pdf2svg
-
-      - name: Convert PDF to SVG
-        run: pdf2svg docs/resume.pdf docs/resume%d.svg all
 
       - name: Setup Pages
         if: github.ref == 'refs/heads/main'
