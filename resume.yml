@@ -110,7 +110,7 @@ projects:
     startDate: 2022-04-01
     endDate: "present"
     highlights:
-      - Used ROS2 middleware framework for ease of use fast deployment and autonomous navigation
+      - Used ROS2 middleware framework for ease of use, fast deployment and autonomous navigation
       - Used CNN like `MobileNet-SSD` and `YOLOv5` for autonomous navigation of the rover
       - Implemented `Kyvernitis` for `CAN` interface and modular control of the rover's sub systems
   - name: Kyvernitis
