@@ -26,6 +26,12 @@ jobs:
             --root
             .
 
+      - name: Upload resume as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: resume
+          path: docs/resume.pdf
+  
       - name: Move resume to gh-pages
         run: mv docs/resume.pdf gh-pages/
 
