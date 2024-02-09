@@ -41,6 +41,13 @@
 
 // each section body can be overridden by re-declaring it here
 
+#let cvabout(info, isbreakable: true) = {
+    if info.about != none {block(breakable: isbreakable)[
+        == Introduction
+        #info.about
+    ]}
+}
+
 #let cvcertificates(info, isbreakable: true) = {
     if info.certificates != none {block[
         == Certifications
@@ -95,6 +102,7 @@
 #show: doc => cvinit(doc)
 
 #cvheading(cvdata, uservars)
+#cvabout(cvdata)
 #cveducation(cvdata)
 #cvwork(cvdata)
 #cvaffiliations(cvdata)
