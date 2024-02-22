@@ -18,7 +18,7 @@ personal:
       username: waseemR02
       url: https://github.com/waseemR02
 
-about: Currently enrolled as 3rd year student. Enthusiastic and well‑organized developer. Worked on projects involving robotics, rover, embedded systems, ROS2 and deeplearning.
+about: Currently enrolled as 3rd year student. Worked on projects involving robotics, rover, embedded systems, ROS2 and deeplearning.
 
 work:
   - organization: Siemens Technology and Services Pvt. Ltd.
@@ -30,7 +30,9 @@ work:
         endDate: "present"
         highlights:
           # Creating seiri: an automation tool which is a cross-platfrom automation tool for handling csv <-> xlsx conversions and validating them
-          - Working on developing a cross-platform automation tool for handling csv$arrow.l.r.double$xlsx conversions and validating them
+          - "Working on developing a cross-platform GUI tool with `KIVY` called *`Seiri`*"
+          - Handles `csv`$arrow.l.r.double$`xlsx` conversions
+          - Validates files against a set of rules and constraints
 education:
   - institution: SRM Institute of Science and Technology
     url: https://www.srmist.edu.in/
@@ -45,7 +47,7 @@ education:
     highlights:
       - "*Electives*: Embedded Systems Design, Quantum Computation, Offensive Security, GPU Programming, PCB Designing"
       - "*Project*: Under the mentorship of Dr.K.Meenakshi, working on _Animal Detection and Alert System_, focused in 
-      optimizing deeplearning models like yolov5 and mobilenet-SSD, and writing paper on tuning hyperparameters with algorithms like `IWO` and `PSO`"
+      optimizing deeplearning models like yolov5 and mobilenet-SSD, and writing paper on tuning hyperparameters with metaheuristic algorithms like `GA`, `IWO` and `PSO`"
 
 affiliations:
   - organization: Team Rudra
@@ -57,6 +59,7 @@ affiliations:
     highlights:
       - Team focuses on developing rovers for University Rover Challenge and International Rover Challenge
       - Primarily worked on developing embedded systems for rover and writing ROS2 stack for rover control and autonomous navigation
+      - Implemented `Kyvernitis` for `CAN` interface and modular control of the rover's sub systems
       - Won 3rd place in International Rover Challenge 2024 and 5th place in International Rover Design Challenge 2023
 
 awards:
@@ -106,15 +109,6 @@ publications:
   #   url: https://example.com
 
 projects:
-  - name: Mars Rover Project
-    url: https://www.srmrudra.com
-    affiliation: Team Rudra
-    startDate: 2022-04-01
-    endDate: "present"
-    highlights:
-      - Used ROS2 middleware framework for ease of use, fast deployment and autonomous navigation
-      - Used CNN like `MobileNet-SSD` and `YOLOv5` for autonomous navigation of the rover
-      - Implemented `Kyvernitis` for `CAN` interface and modular control of the rover's sub systems
   - name: Kyvernitis
     url: https://github.com/waseemR02/kyvernitis
     affiliation: Team Rudra
@@ -124,40 +118,15 @@ projects:
       - Enhanced the functionality of a rover by programming Blackpill microcontrollers to act as daughter boards, effectively managing subsystems like arm, bio-arm, astronaut’s box, etc to reduce overall system failure.
       - Implemented `CAN` interface communication with pixhawk and later directly through 433 MHz
       - Embraced the board‑agnostic approach inherent to Zephyr, allowing for easy customization through device tree configuration. This approach ensures that code compiles effortlessly for any Zephyr‑supported hardware board, aligning with the Linux philosophy of portability and adaptability.
-  - name: Seiri 
-    url: https://github.com/waseemR02/seiri
-    affiliation: Siemens Technology and Services Pvt. Ltd.
-    startDate: 2024-01-08
-    endDate: present
-    highlights:
-      - Working on developing a cross-platform GUI tool with `KIVY`
-      - Handles `csv`$arrow.l.r.double$`xlsx` conversions
-      - Validates files against a set of rules and constraints
-  - name: Animal Detection and Alert System
-    url: 
-    affiliation: SRM Institute of Science and Technology
-    startDate: 2023-04-01
-    endDate: "present"
-    highlights:
-      - Implemented different models for edge hardware ‑ `MobileNet‑SSD`, `YOLOv5` to be benchmarked for paperwork
-      - Optimizing deeplearning models like `YOLOv5` and `MobileNet-SSD`
-      - Writing paper on tuning hyperparameters with meta-heuristic algorithms like `GA`, `IWO` and `PSO`
-  - name: Alchemy
+
+  - name: ROS packages
     url: https://github.com/waseemR02/alchemy
     affiliation: Team Rudra
     startDate: 2023-11-01
     endDate: 2023-12-31
     highlights:
-      - Serial communication with Atmega 328p to extract data from sensors
-      - ROS2 framework with Foxglove for Visualization of data from the sensors
-  - name: Unconfined
-    url: https://github.com/waseemR02/unconfined
-    affiliation: Team Rudra
-    startDate: 2023-12-01
-    endDate: 2023-12-31
-    highlights:
-      - ROS2 package using ZMQ for seamless and realtime camera stream.
-      - Multithreaded to enable collection and stitching of photos while streaming
+      - "*Alchemy* : ROS2 package for sensor data visualization through Foxglove using Atmega 328p"
+      - "*Unconfined* : ROS2 package for realtime camera stream using ZMQ, multithreaded for photo collection and stitching"
   - name: CombinedSys
     url: https://github.com/SHAY2407/combinedsys
     affiliation: Team Rudra
