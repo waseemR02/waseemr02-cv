@@ -107,6 +107,7 @@
 #cvskills(cvdata)
 #cvwork(cvdata)
 #cvaffiliations(cvdata)
+#v(-0.5em)
 #cvprojects(cvdata)
 #cvawards(cvdata)
 #cvcertificates(cvdata)

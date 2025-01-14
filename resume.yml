@@ -21,18 +21,26 @@ personal:
 about: Currently enrolled as final year student. Worked on projects involving robotics, rover, embedded systems, ROS2 and deeplearning.
 
 work:
+  - organization: Western Digital 
+    url: https://www.westerndigital.com/en-in
+    location: Bangalore, India
+    positions:
+      - position: System Verification Intern
+        startDate: 2024-09-23
+        endDate: "present"
+        highlights:
+          - Enabled platform to automate external SSD testing against various user scenarios test cases which reduced manual testing time by 90%
+          - Optimized an existing test engine and analysis tools to run 400% faster using process pool and memory mapping.
   - organization: Siemens Technology and Services Pvt. Ltd.
     url: https://www.siemens.com/in/en.html
     location: Bangalore, India
     positions:
       - position: Intern at PAMC
         startDate: 2024-01-08
-        endDate: "present"
+        endDate: 2024-11-29
         highlights:
-          # Creating seiri: an automation tool which is a cross-platfrom automation tool for handling csv <-> xlsx conversions and validating them
-          - "Working on developing a cross-platform GUI tool with `KIVY` called *`Seiri`*"
-          - Handles `csv`$arrow.l.r.double$`xlsx` conversions
-          - Validates files against a set of rules and constraints
+          - Developed a cross-platform GUI tool with `KIVY` called *`Seiri`* that handles `csv`$arrow.l.r.double$`xlsx` conversions and validates files against a set of rules and constraints
+          - Developed a `Flask` application called *`Conduit`* that acts as a bridge between `Azure DevOps` and `Grafana`, allowing users to display project details in a beautiful dashboard
 education:
   - institution: SRM Institute of Science and Technology
     url: https://www.srmist.edu.in/
@@ -42,7 +50,7 @@ education:
     endDate: 2025-06-30
     location: Kattankulathur, Tamil Nadu, India 
     honors:
-      - 9.91 CGPA
+      - 9.86 CGPA
     courses:
     highlights:
       - "*Electives*: Embedded Systems Design, Quantum Computation, Offensive Security, GPU Programming, PCB Designing"
@@ -129,23 +137,6 @@ projects:
       - Integrated IMU and wheel encoders to derive odometry data, enabling accurate tracking of the rover's position and orientation.
       - Implemented a PID control system for precise movement and positioning of the rover's arm joints.
       - Established an interface with an Autonomous Navigation Stack via UART, using COBS serialization for reliable data transmission.
-
-  - name: ROS packages
-    url: https://github.com/waseemR02/alchemy
-    affiliation: Team Rudra
-    startDate: 2023-11-01
-    endDate: 2023-12-31
-    highlights:
-      - "*Alchemy* : ROS2 package for sensor data visualization through Foxglove using Atmega 328p"
-      - "*Unconfined* : ROS2 package for realtime camera stream using ZMQ, multithreaded for photo collection and stitching"
-  - name: CombinedSys
-    url: https://github.com/SHAY2407/combinedsys
-    affiliation: Team Rudra
-    startDate: 2022-04-01
-    endDate: 2022-04-30
-    highlights:
-      - Implemented a GUI Based Control for the Rover
-      - Motor Control, Sensor Data Visualization, Camera Stream integrated
 
 skills:
   - category: Soft Skills
