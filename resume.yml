@@ -21,16 +21,17 @@ personal:
 about: Currently enrolled as final year student. Worked on projects involving robotics, rover, embedded systems, ROS2 and deeplearning.
 
 work:
-  - organization: Western Digital 
-    url: https://www.westerndigital.com/en-in
+  - organization: Sandisk
+    url: https://www.sandisk.com/
     location: Bangalore, India
     positions:
       - position: System Verification Intern
         startDate: 2024-09-23
         endDate: "present"
         highlights:
-          - Enabled platform to automate external SSD testing against various user scenarios test cases which reduced manual testing time by 90%
-          - Optimized an existing test engine and analysis tools to run 400% faster using process pool and memory mapping.
+            - Enabled a testing platform and developed an application for regression analysis, scheduling and state management, reducing manual testing time by 90%
+            - Achieved 8x speed improvement in a replay engine through process pooling, batching, streaming and memory mapping
+            - Developed a new cross-platform tool for capturing usb traffic
   - organization: Siemens Technology and Services Pvt. Ltd.
     url: https://www.siemens.com/in/en.html
     location: Bangalore, India
@@ -39,8 +40,8 @@ work:
         startDate: 2024-01-08
         endDate: 2024-11-29
         highlights:
-          - Developed a cross-platform GUI tool with `KIVY` called *`Seiri`* that handles `csv`$arrow.l.r.double$`xlsx` conversions and validates files against a set of rules and constraints
-          - Developed a `Flask` application called *`Conduit`* that acts as a bridge between `Azure DevOps` and `Grafana`, allowing users to display project details in a beautiful dashboard
+            - Developed `Seiri`, a KIVY GUI tool for CSV/XLSX validation and conversion
+            - Created `Conduit`, a Flask app integrating Azure DevOps data with Grafana dashboards
 education:
   - institution: SRM Institute of Science and Technology
     url: https://www.srmist.edu.in/
@@ -52,10 +53,11 @@ education:
     honors:
       - 9.86 CGPA
     courses:
+      - Embedded Systems Design, Offensive Security, GPU Programming, PCB Designing
     highlights:
-      - "*Electives*: Embedded Systems Design, Quantum Computation, Offensive Security, GPU Programming, PCB Designing"
-      - "*Project*: Under the mentorship of Dr.K.Meenakshi, working on _Animal Detection and Alert System_, focused in 
-      optimizing deeplearning models like yolov5 and mobilenet-SSD, and writing paper on tuning hyperparameters with metaheuristic algorithms like `GA`, `IWO` and `PSO`"
+      # - "*Electives*: Embedded Systems Design, Quantum Computation, Offensive Security, GPU Programming, PCB Designing"
+      # - "*Project*: Under the mentorship of Dr.K.Meenakshi, working on _Animal Detection and Alert System_, focused in 
+      # optimizing deeplearning models like yolov5 and mobilenet-SSD, and writing paper on tuning hyperparameters with metaheuristic algorithms like `GA`, `IWO` and `PSO`"
 
 affiliations:
   - organization: Team Rudra
@@ -65,10 +67,7 @@ affiliations:
     startDate: 2022-04-30
     endDate: "present"
     highlights:
-      - Team focuses on developing rovers for University Rover Challenge and International Rover Challenge
-      - Primarily worked on developing embedded systems for rover and writing ROS2 stack for rover control and autonomous navigation
-      - Implemented `Kyvernitis` for `CAN` interface and modular control of the rover's sub systems
-      - Won 3rd place in International Rover Challenge 2024 and 5th place in International Rover Design Challenge 2023
+      - Led development of embedded systems and ROS2-based control software for competitive rover challenges, focusing on team mentorship and cross-subsystem integration
 
 awards:
   - title: Global Rank 3rd in International Rover Challenge
@@ -83,18 +82,18 @@ awards:
     url: https://drive.google.com/file/d/12R4VZzB9ERelN0WwLCmrgPU3LodgBRYN/view?usp=sharing
     location: Chennai, Tamil Nadu, India
     highlights:
-  - title: Global Rank 7th in International Rover Challenge
-    date: 2023-01-30
-    issuer: Space Robotics Society
-    url: 
-    location: Bangalore, India
-    highlights:
-  - title: Global Rank 8th in International Rover Design Challenge
-    date: 2022-10-29
-    issuer: Space Robotics Society
-    url: https://drive.google.com/file/d/1eOwaZb4CX9R_Low_-fd748czsYjzDUtT/view?usp=sharing
-    location: Chennai, Tamil Nadu, India
-    highlights:
+  # - title: Global Rank 7th in International Rover Challenge
+  #   date: 2023-01-30
+  #   issuer: Space Robotics Society
+  #   url: 
+  #   location: Bangalore, India
+  #   highlights:
+  # - title: Global Rank 8th in International Rover Design Challenge
+  #   date: 2022-10-29
+  #   issuer: Space Robotics Society
+  #   url: https://drive.google.com/file/d/1eOwaZb4CX9R_Low_-fd748czsYjzDUtT/view?usp=sharing
+  #   location: Chennai, Tamil Nadu, India
+  #   highlights:
 
 certificates:
   - name: "Embedded Systems Programming"
@@ -123,9 +122,9 @@ projects:
     startDate: 2023-08-01
     endDate: 2024-01-15
     highlights:
-      - Enhanced the functionality of a rover by programming Blackpill microcontrollers to act as daughter boards, effectively managing subsystems like arm, bio-arm, astronaut’s box, etc to reduce overall system failure.
+      - Programmed Blackpill microcontrollers as daughter boards to manage rover subsystems - arm, bio-arm, astronaut's box
       - Implemented `CAN` interface communication with pixhawk and later directly through 433 MHz
-      - Embraced the board‑agnostic approach inherent to Zephyr, allowing for easy customization through device tree configuration. This approach ensures that code compiles effortlessly for any Zephyr‑supported hardware board, aligning with the Linux philosophy of portability and adaptability.
+      - Utilized Zephyr's board-agnostic approach with device tree configurations for cross-platform hardware compatibility
 
   - name: Mother
     url: https://github.com/waseemR02/kyvernitis/tree/main/mother
@@ -134,18 +133,18 @@ projects:
     endDate: 2024-06-01
     highlights:
       - Implemented a hardware-level differential drive system to control the rover's movement.
-      - Integrated IMU and wheel encoders to derive odometry data, enabling accurate tracking of the rover's position and orientation.
+      - Integrated IMU and wheel encoders to derive odometry data, to track rover's position and orientaion
       - Implemented a PID control system for precise movement and positioning of the rover's arm joints.
-      - Established an interface with an Autonomous Navigation Stack via UART, using COBS serialization for reliable data transmission.
+      - Established an interface with an Autonomous Navigation Stack via UART, using COBS serialization.
 
 skills:
-  - category: Soft Skills
-    skills:
-      - Communication
-      - Critical Thinking
-      - Problem Solving
-      - Time Management
-      - Technical Writing
+  # - category: Soft Skills
+  #   skills:
+  #     - Communication
+  #     - Critical Thinking
+  #     - Problem Solving
+  #     - Time Management
+  #     - Technical Writing
   - category: Programming
     skills:
       - Python
@@ -184,15 +183,15 @@ skills:
       - Computer Vision
   - category: Embedded Systems and Hardware
     skills:
-      - STM blackpill
+      - STM32
       - Raspberry Pico
       - ESP32
-      - Arduino
       - Pixhawk
       - CAN
       - UART
       - I2C
       - SPI
+      - USB3, USB4, PCIe, NVMe
 
 languages:
   - language: English

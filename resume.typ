@@ -5,7 +5,7 @@
 #let uservars = (
     headingfont: "Linux Libertine",
     bodyfont: "Linux Libertine",
-    fontsize: 11pt, // 10pt, 11pt, 12pt
+    fontsize: 10pt, // 10pt, 11pt, 12pt
     linespacing: 6pt,
     showAddress: true, // true/false show address in contact info
     showNumber: true,  // true/false show phone number in contact info
@@ -102,7 +102,7 @@
 #show: doc => cvinit(doc)
 
 #cvheading(cvdata, uservars)
-#cvabout(cvdata)
+// #cvabout(cvdata)
 #cveducation(cvdata)
 #cvskills(cvdata)
 #cvwork(cvdata)
@@ -110,8 +110,8 @@
 #v(-0.5em)
 #cvprojects(cvdata)
 #cvawards(cvdata)
-#cvcertificates(cvdata)
+// #cvcertificates(cvdata)
 #cvpublications(cvdata)
 // #cvlangsinterests(cvdata)
 #cvreferences(cvdata)
-#endnote()
+// #endnote()
