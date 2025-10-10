@@ -37,7 +37,9 @@ jobs:
         run: mv docs/resume.pdf gh-pages/
 
       - name: Install pdf2svg
-        run: sudo apt install pdf2svg
+        run: |
+          sudo apt update
+          sudo apt install pdf2svg
 
       - name: Convert PDF to SVG
         run: pdf2svg gh-pages/resume.pdf gh-pages/resume%d.svg all
