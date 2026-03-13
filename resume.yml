@@ -18,30 +18,43 @@ personal:
       username: waseemR02
       url: https://github.com/waseemR02
 
-about: Currently enrolled as final year student. Worked on projects involving robotics, rover, embedded systems, ROS2 and deeplearning.
+about: Embedded software engineer with experience in firmware development and real-time systems. Background in robotics, embedded systems, ROS2, and deep learning.
 
 work:
+  - organization: Amazon
+    url: https://www.amazon.in
+    location: Bangalore, India
+    positions:
+      - position: Embedded SDE
+        startDate: 2025-07-28
+        endDate: "present"
+        highlights:
+            - Worked on unifying fragmented embedded firmware codebases to support multiple hardware platforms, consolidating power management, battery, timing, streaming lifecycle and coprocessor communications
+            - Worked on FSMs driving core product behavior across power states and system lifecycle
+
   - organization: Sandisk
     url: https://www.sandisk.com/
     location: Bangalore, India
     positions:
       - position: System Verification Intern
         startDate: 2024-09-23
-        endDate: "present"
+        endDate: 2025-06-27
         highlights:
             - Enabled a testing platform and developed an application for regression analysis, scheduling and state management, reducing manual testing time by 90%
             - Achieved 8x speed improvement in a replay engine through process pooling, batching, streaming and memory mapping
             - Developed a new cross-platform tool for capturing usb traffic
-  - organization: Siemens Technology and Services Pvt. Ltd.
-    url: https://www.siemens.com/in/en.html
-    location: Bangalore, India
-    positions:
-      - position: Intern at PAMC
-        startDate: 2024-01-08
-        endDate: 2024-11-29
-        highlights:
-            - Developed `Seiri`, a KIVY GUI tool for CSV/XLSX validation and conversion
-            - Created `Conduit`, a Flask app integrating Azure DevOps data with Grafana dashboards
+
+  # - organization: Siemens Technology and Services Pvt. Ltd.
+  #   url: https://www.siemens.com/in/en.html
+  #   location: Bangalore, India
+  #   positions:
+  #     - position: Intern at PAMC
+  #       startDate: 2024-01-08
+  #       endDate: 2024-11-29
+  #       highlights:
+  #           - Developed `Seiri`, a KIVY GUI tool for CSV/XLSX validation and conversion
+  #           - Created `Conduit`, a Flask app integrating Azure DevOps data with Grafana dashboards
+
 education:
   - institution: SRM Institute of Science and Technology
     url: https://www.srmist.edu.in/
